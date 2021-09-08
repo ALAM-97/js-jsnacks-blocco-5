@@ -1,39 +1,13 @@
-// 1. Scrivi una funzione che fonda due array(aventi lo stesso numero di  elementi) prendendo alternativamente gli elementi da uno e dall’altro.
-// es. [a, b, c], [1, 2, 3] →[a, 1, b, 2, c, 3].
-
-// FUNCTION
-
-// function mergeArray(arr1, arr2) {
-//     let arrMerged = [];
-//     for (let i = 0; i < arr1.lenght; i++) {
-//         arrMerged.push(arr1[i]);
-//         arrMerged.push(arr2[i]);
-//     }
-
-//     return arrMerged;
-// }
-
-// // 1.
-// const arr1 = ["a", "b", "c"];
-// const arr2 = [1, 2, 3];
-
-
-// console.log(mergeArray(arr1, arr2));
-
-function mergeArray(arr1, arr2) {
-    let arrMerged = [];
-    for (let i = 0; i < arr1.lenght; i++) {
-        arrMerged.push(arr1[i]);
-        arrMerged.push(arr2[i]);
+function mergeArr(arr1, arr2) {
+    var mergedArrays = [];
+    for ( var i = 0; i < arr1.length; i++) {
+        mergedArrays.push(arr1[i]);
+        mergedArrays.push(arr2[i]);
     }
-
-    return arrMerged;
+    return mergedArrays;
 }
 
-
-const arr1 = ['a', 'b', 'c'];
-const arr2 = [1, 2, 3];
-
-console.log(mergeArray(arr1, arr2));
-
-
+var letters = ['a', 'b', 'c'];
+var numbers = [1, 2, 3];
+var result = mergeArr(letters, numbers);
+console.log(result);
